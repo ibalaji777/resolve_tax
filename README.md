@@ -7,12 +7,12 @@ it is a tiny gst library for inclusive and exclusive computation
 ### Install from npm
 
 ```
-npm install resolve_gst --save
+npm install resolve_tax --save
 ```
 
 ### Currently Added Features 
 ```
-import {gst} from 'resolve_gst'
+import {tax} from 'resolve_tax'
 ```
 
 ```
@@ -21,17 +21,28 @@ npm install resolve_gst --save
 
 ### Usage
 ```
-let rate=580;
-let qty=2;
-let cgst=6;
-let sgst=6;
-let igst=0;
-let cess=0;
-//INCLUSIVE or EXCLUSIVE
-let discount=5;
 
-let tax_type='INCLUSIVE'
-gst(rate,qty,cgst,sgst,igst,cess,tax_type,discount,function(result){
+var payload={
+    rate:10,
+    qty:1,
+    discount:0, 
+    isInclusive:'Y',
+ taxes:[
+     {
+         name:'CGST',value:5,
+     },
+     {
+        name:'SGST',value:15,
+    },
+    {
+        name:'IGST',value:4,
+    },
+    {
+        name:'other',value:4,
+    }
+ ]   
+}
+tax(payload,function(result){
 
     console.log(result)
 

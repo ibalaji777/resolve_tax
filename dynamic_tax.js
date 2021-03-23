@@ -22,7 +22,7 @@ var payload={
  ]   
 }
 
-function gst(payload,get){
+function tax(payload,get){
     const {
         rate=0,
         qty=1,
@@ -233,6 +233,6 @@ function gst(payload,get){
 gst(payload);
     module.exports = { 
 
-        gst
+        tax
     }
 
