@@ -1,6 +1,6 @@
 {
   "name": "resolve_tax",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "tax",
   "main": "dynamic_tax.js",
   "scripts": {
