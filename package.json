@@ -1,8 +1,8 @@
 {
-  "name": "resolve_gst",
+  "name": "resolve_tax",
   "version": "0.0.1",
-  "description": "gst tax",
-  "main": "index.js",
+  "description": "tax",
+  "main": "dynamic_tax.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "resolve_gst"
+    "url": "resolve_tax"
   }
 }
